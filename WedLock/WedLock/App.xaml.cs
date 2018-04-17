@@ -10,7 +10,7 @@ namespace WedLock
         {
             InitializeComponent();
             //7D4F69
-            MainPage = new RegisterPage();
+            MainPage = new ForgotPasswordPage();
         }
 
         protected override void OnStart()
