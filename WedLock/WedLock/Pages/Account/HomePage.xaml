@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xfControls="clr-namespace:AsNum.XFControls;assembly=AsNum.XFControls"
+             x:Class="WedLock.Pages.Account.HomePage"
+             BackgroundImage="loginBackground.jpg">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="logo.png" Aspect="AspectFit" Margin="0,200,0,0" HeightRequest="50"/>
+            <Label Text="Jivan Bhar&#10;Humsafar" HorizontalOptions="Center" Margin="5"
+                   TextColor="White" FontAttributes="Bold" FontSize="28"
+                   HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Satisfy" />
+                        <On Platform="Android" Value="Satisfy-Regular.ttf#Satisfy" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+            <xfControls:Border CornerRadius="60" BackgroundColor="#982268"
+                               HorizontalOptions="Center" Margin="20,10">
+                <StackLayout Orientation="Horizontal" HeightRequest="40">
+                    <StackLayout BackgroundColor="#E91E63" Orientation="Horizontal">
+                        <Image HorizontalOptions="StartAndExpand" Source="login.png" Aspect="AspectFit"
+                               HeightRequest="15" Margin="15,10,7,10"/>
+                        <Label Text="LOGIN" TextColor="White" HorizontalTextAlignment="Start"
+                               VerticalTextAlignment="Center" HeightRequest="32" FontSize="16"
+                               WidthRequest="100" HorizontalOptions="CenterAndExpand"/>
+                    </StackLayout>
+                    <StackLayout BackgroundColor="#982268" Orientation="Horizontal">
+                        <Image HorizontalOptions="StartAndExpand" Source="pencil.png" Aspect="AspectFit"
+                               HeightRequest="15" Margin="10,10,7,10"/>
+                        <Label Text="REGISTER" TextColor="White"  HorizontalTextAlignment="Start"
+                               HeightRequest="32" VerticalTextAlignment="Center" FontSize="16"
+                               WidthRequest="100" HorizontalOptions="Center" Margin="0,0,10,0"/>
+                    </StackLayout>
+                </StackLayout>
+            </xfControls:Border>
+            <Label Text="Jivan Bhar Humsafar is a leading Matrimonial cum Dating site. Join now to find a partner for spending some leasure time or to find your life partner. You can create profile for yourself or your relative."
+                   HorizontalOptions="Center" Margin="20,10" TextColor="White" FontSize="18"
+                   HorizontalTextAlignment="Center" VerticalTextAlignment="Center" >
+              </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
