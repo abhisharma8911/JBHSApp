@@ -4,6 +4,7 @@
              xmlns:customControls="clr-namespace:WedLock.CustomControls;assembly=WedLock"
              xmlns:xfControls="clr-namespace:AsNum.XFControls;assembly=AsNum.XFControls"
              x:Class="WedLock.Pages.Account.LoginPage"
+             NavigationPage.HasNavigationBar="False"
              BackgroundImage="loginBackground.jpg">
     <ContentPage.Content>
         <StackLayout>

@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CommonServiceLocator" Version="2.0.3" />
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1" />
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
     <PackageReference Include="XFControls" Version="1.0.0.6" />
   </ItemGroup>
@@ -22,10 +24,6 @@
     <Compile Update="Pages\Shared\MasterNavPageMenuItem.cs">
       <SubType>Code</SubType>
     </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ViewModels\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -53,5 +51,9 @@
     <EmbeddedResource Update="Pages\Shared\MasterNavPageMaster.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="NavigationService\" />
   </ItemGroup>
 </Project>
