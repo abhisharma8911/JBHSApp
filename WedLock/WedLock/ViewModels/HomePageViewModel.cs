@@ -5,17 +5,22 @@ namespace WedLock.ViewModels
 {
     public class HomePageViewModel : BaseViewModel
     {
-        private INavigationService _navigationService;
         public HomePageViewModel(INavigationService navService)
         {
             _navigationService = navService;
         }
 
         public RelayCommand LoginCommand => new RelayCommand(NavtoLoginPage);
+        public RelayCommand RegisterCommand => new RelayCommand(NavtoRegisterPage);
+
 
         private void NavtoLoginPage()
         {
-            _navigationService.NavigateTo(ViewModelLocator.Login);
+            _navigationService.NavigateTo(ViewModelLocator.LoginPage);
+        }
+        private void NavtoRegisterPage()
+        {
+            _navigationService.NavigateTo(ViewModelLocator.RegisterPage);
         }
     }
 }

@@ -27,7 +27,9 @@ namespace WedLock
 
             #region Account
             nav.Configure(ViewModelLocator.HomePage, typeof(HomePage));
-            nav.Configure(ViewModelLocator.Login, typeof(LoginPage));
+            nav.Configure(ViewModelLocator.LoginPage, typeof(LoginPage));
+            nav.Configure(ViewModelLocator.RegisterPage, typeof(RegisterPage));
+            nav.Configure(ViewModelLocator.ForgotPasswordPage, typeof(ForgotPasswordPage));
             #endregion
 
             if (!SimpleIoc.Default.IsRegistered<INavigationService>())
