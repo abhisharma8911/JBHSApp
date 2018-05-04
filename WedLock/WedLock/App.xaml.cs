@@ -4,6 +4,7 @@ using WedLock.Pages.Account;
 using WedLock.ViewModels;
 using GalaSoft.MvvmLight.Ioc;
 using GalaSoft.MvvmLight.Views;
+using WedLock.Pages.Shared;
 
 namespace WedLock
 {
@@ -30,6 +31,9 @@ namespace WedLock
             nav.Configure(ViewModelLocator.LoginPage, typeof(LoginPage));
             nav.Configure(ViewModelLocator.RegisterPage, typeof(RegisterPage));
             nav.Configure(ViewModelLocator.ForgotPasswordPage, typeof(ForgotPasswordPage));
+            #endregion
+            #region Shared
+            nav.Configure(ViewModelLocator.MasterNavPage, typeof(MasterNavPage));
             #endregion
 
             if (!SimpleIoc.Default.IsRegistered<INavigationService>())

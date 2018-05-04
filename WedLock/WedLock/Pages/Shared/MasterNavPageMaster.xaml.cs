@@ -28,19 +28,19 @@ namespace WedLock.Pages.Shared
         class MasterNavPageMasterViewModel : INotifyPropertyChanged
         {
             public ObservableCollection<MasterNavPageMenuItem> MenuItems { get; set; }
-            
+            public string UserName = "Ishwardeep";
             public MasterNavPageMasterViewModel()
             {
                 MenuItems = new ObservableCollection<MasterNavPageMenuItem>(new[]
                 {
-                    new MasterNavPageMenuItem { Id = 0, Title = "Page 1" },
-                    new MasterNavPageMenuItem { Id = 1, Title = "Page 2" },
-                    new MasterNavPageMenuItem { Id = 2, Title = "Page 3" },
-                    new MasterNavPageMenuItem { Id = 3, Title = "Page 4" },
-                    new MasterNavPageMenuItem { Id = 4, Title = "Page 5" },
+                    new MasterNavPageMenuItem { Id = 0, Title = "DashBoard", TargetType=typeof(Profile.DashBoard) },
+                    new MasterNavPageMenuItem { Id = 1, Title = "Search Profiles",TargetType=typeof(Profile.Search) },
+                    new MasterNavPageMenuItem { Id = 2, Title = "Photos",TargetType=typeof(Profile.Photos) },
+                    //new MasterNavPageMenuItem { Id = 3, Title = "Page 4" },
+                    //new MasterNavPageMenuItem { Id = 4, Title = "Page 5" },
                 });
             }
-            
+
             #region INotifyPropertyChanged Implementation
             public event PropertyChangedEventHandler PropertyChanged;
             void OnPropertyChanged([CallerMemberName] string propertyName = "")

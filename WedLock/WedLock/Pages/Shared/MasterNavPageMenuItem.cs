@@ -9,10 +9,6 @@ namespace WedLock.Pages.Shared
 
     public class MasterNavPageMenuItem
     {
-        public MasterNavPageMenuItem()
-        {
-            TargetType = typeof(MasterNavPageDetail);
-        }
         public int Id { get; set; }
         public string Title { get; set; }
 

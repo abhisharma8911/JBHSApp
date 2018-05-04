@@ -23,6 +23,7 @@ namespace WedLock.ViewModels
         public const string LoginPage = "LoginPage";
         public const string RegisterPage = "RegisterPage";
         public const string ForgotPasswordPage = "ForgotPasswordPage";
+        public const string MasterNavPage = "MasterNavPage";       
 
 
 

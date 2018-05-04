@@ -48,7 +48,10 @@
                         <Label Text="LOGIN NOW" TextColor="White" HorizontalTextAlignment="Center"
                                VerticalTextAlignment="Center" Margin="15,0,0,0" HeightRequest="32" FontSize="16"
                                WidthRequest="150" />
-                    </StackLayout>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding LoginCommand}"></TapGestureRecognizer>
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
                 </xfControls:Border>
             <Label Text="Forgot Your Password!" TextColor="White" Margin="0,10,0,0"
                    HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="16">
@@ -58,4 +61,4 @@
             </Label>
         </StackLayout>
     </ContentPage.Content>
-</ContentPage>
+</ContentPage> 
