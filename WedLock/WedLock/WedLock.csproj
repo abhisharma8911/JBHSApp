@@ -21,6 +21,9 @@
     <Compile Update="Pages\Account\RegisterPage.xaml.cs">
       <DependentUpon>RegisterPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Pages\Profile\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Pages\Shared\MasterNavPageMenuItem.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -42,7 +45,7 @@
     <EmbeddedResource Update="Pages\Account\RegisterPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Pages\Profile\DashBoard.xaml">
+    <EmbeddedResource Update="Pages\Profile\Home.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\Profile\Photos.xaml">

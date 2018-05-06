@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WedLock.Pages.Profile.Home"
+             Title="Home">
+    <ContentPage.Content>
+        <StackLayout Orientation="Horizontal">
+            <StackLayout VerticalOptions="Start" BackgroundColor="#EC3B77" Margin="25,20,20,5" HeightRequest="110">
+                <Image Source="userdefault.png" Aspect="AspectFit" Margin="15,15,15,5" WidthRequest="100"/>
+                <Label HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" TextColor="White">Profile</Label>
+            </StackLayout>
+            <StackLayout VerticalOptions="Start" BackgroundColor="#EC3B77" Margin="20,20,20,0" HeightRequest="110">
+                <Image Source="photocamera1.png" Aspect="AspectFit" Margin="15,15,15,5" WidthRequest="100"/>
+                <Label HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"  TextColor="White">Photos</Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

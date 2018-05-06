@@ -5,6 +5,16 @@
 	<Application.Resources>
 
 		<!-- Application resource dictionary -->
+        <ResourceDictionary>
 
-	</Application.Resources>
+            <!-- Styles -->
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#7D4F69"/>
+                <Setter Property="BarTextColor" Value="White"/>
+            </Style>
+            <!-- Styles -->
+
+        </ResourceDictionary>
+
+    </Application.Resources>
 </Application>

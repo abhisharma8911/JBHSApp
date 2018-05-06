@@ -11,7 +11,7 @@
     <MasterDetailPage.Detail>
         <NavigationPage>
             <x:Arguments>
-                <profilepages:DashBoard />
+                <profilepages:Home />
             </x:Arguments>
         </NavigationPage>
     </MasterDetailPage.Detail>

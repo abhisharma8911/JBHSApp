@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace WedLock.Pages.Profile
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class DashBoard : ContentPage
+	public partial class Home : ContentPage
 	{
-		public DashBoard ()
+		public Home ()
 		{
 			InitializeComponent ();
 		}
