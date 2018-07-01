@@ -10,7 +10,7 @@
               HasUnevenRows="true"
               ItemsSource="{Binding MenuItems}">
       <ListView.Header>
-          <Grid BackgroundColor="#7D4F69">
+                <Grid BackgroundColor="#7D4F69">
           <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10"/>
             <ColumnDefinition Width="*"/>

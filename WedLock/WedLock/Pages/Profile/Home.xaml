@@ -4,15 +4,73 @@
              x:Class="WedLock.Pages.Profile.Home"
              Title="Home">
     <ContentPage.Content>
-        <StackLayout Orientation="Horizontal">
-            <StackLayout VerticalOptions="Start" BackgroundColor="#EC3B77" Margin="25,20,20,5" HeightRequest="110">
-                <Image Source="userdefault.png" Aspect="AspectFit" Margin="15,15,15,5" WidthRequest="100"/>
-                <Label HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" TextColor="White">Profile</Label>
+        <ScrollView>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout VerticalOptions="Start" Orientation="Vertical" Margin="25,0,20,5" HeightRequest="130">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ProfileCommand}"></TapGestureRecognizer>
+                        </StackLayout.GestureRecognizers>
+                        <Image Source="avatar.png" Aspect="AspectFit" Margin="15,15,15,0" WidthRequest="100"/>
+                    <Label HorizontalTextAlignment="Center" TextColor="#7D4F69" FontSize="Medium"  HorizontalOptions="CenterAndExpand">Profile</Label>
             </StackLayout>
-            <StackLayout VerticalOptions="Start" BackgroundColor="#EC3B77" Margin="20,20,20,0" HeightRequest="110">
-                <Image Source="photocamera1.png" Aspect="AspectFit" Margin="15,15,15,5" WidthRequest="100"/>
-                <Label HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"  TextColor="White">Photos</Label>
+                <StackLayout VerticalOptions="Start" Margin="20,0,20,0" HeightRequest="130">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding PhotosCommand}"></TapGestureRecognizer>
+                        </StackLayout.GestureRecognizers>
+                        <Image Source="cameraicon.png" Aspect="AspectFit" Margin="15,15,15,0" WidthRequest="100"/>
+                        <Label HorizontalTextAlignment="Center" TextColor="#7D4F69" FontSize="Medium" HorizontalOptions="CenterAndExpand" >Photos</Label>
             </StackLayout>
         </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout VerticalOptions="Start" Margin="25,15,20,5" HeightRequest="130">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding SearchMatchCommand}"></TapGestureRecognizer>
+                        </StackLayout.GestureRecognizers>
+                        <Image Source="Searchicon.png" Aspect="AspectFit" Margin="15,15,15,5" WidthRequest="100"/>
+                        <Label HorizontalTextAlignment="Center" FontSize="Medium" HorizontalOptions="CenterAndExpand" >Search Match</Label>
+                </StackLayout>
+                <StackLayout VerticalOptions="Start" Margin="20,15,20,0" HeightRequest="130">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding AccountDetailsCommand}"></TapGestureRecognizer>
+                        </StackLayout.GestureRecognizers>
+                        <Image Source="passbook.png" Aspect="AspectFit" Margin="15,15,15,5" WidthRequest="100"/>
+                        <Label HorizontalTextAlignment="Center" FontSize="Medium" HorizontalOptions="CenterAndExpand" >Account Details</Label>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout VerticalOptions="Start" Margin="25,15,20,5" HeightRequest="130">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding MessagesCommand}"></TapGestureRecognizer>
+                        </StackLayout.GestureRecognizers>
+                        <Image Source="Messages.png" Aspect="AspectFit" Margin="15,15,15,5" WidthRequest="100"/>
+                        <Label HorizontalTextAlignment="Center" FontSize="Medium" HorizontalOptions="CenterAndExpand">Messages</Label>
+                </StackLayout>
+                <StackLayout VerticalOptions="Start" Margin="20,15,20,0" HeightRequest="130">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ContactsCommand}"></TapGestureRecognizer>
+                        </StackLayout.GestureRecognizers>
+                        <Image Source="contacts.png" Aspect="AspectFit" Margin="15,15,15,5" WidthRequest="100"/>
+                        <Label HorizontalTextAlignment="Center" FontSize="Medium" HorizontalOptions="CenterAndExpand">Contacts</Label>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                    <StackLayout VerticalOptions="Start" Margin="25,15,20,5" HeightRequest="150">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ReferredCommand}"></TapGestureRecognizer>
+                        </StackLayout.GestureRecognizers>
+                        <Image Source="refer.png" Aspect="AspectFit" Margin="15,15,15,5" WidthRequest="100"/>
+                        <Label HorizontalTextAlignment="Center" FontSize="Medium" HorizontalOptions="CenterAndExpand">Referred</Label>
+                    </StackLayout>
+                    <StackLayout VerticalOptions="Start" Margin="20,15,20,0" HeightRequest="150">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding RequestsCommand}"></TapGestureRecognizer>
+                        </StackLayout.GestureRecognizers>
+                        <Image Source="requests.png" Aspect="AspectFit" Margin="15,15,15,5" WidthRequest="100"/>
+                        <Label HorizontalTextAlignment="Center" FontSize="Medium" HorizontalOptions="CenterAndExpand">Requests</Label>
+                    </StackLayout>
+                </StackLayout>
+        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

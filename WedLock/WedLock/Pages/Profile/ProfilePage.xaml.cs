@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace WedLock.Pages.Profile
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Photos : ContentPage
+	public partial class ProfilePage : ContentPage
 	{
-		public Photos ()
+		public ProfilePage ()
 		{
 			InitializeComponent ();
 		}

@@ -34,8 +34,8 @@ namespace WedLock.Pages.Shared
                 MenuItems = new ObservableCollection<MasterNavPageMenuItem>(new[]
                 {
                     new MasterNavPageMenuItem { Id = 0, Title = "Home", TargetType=typeof(Profile.Home) },
-                    new MasterNavPageMenuItem { Id = 1, Title = "Search Profiles",TargetType=typeof(Profile.Search) },
-                    new MasterNavPageMenuItem { Id = 2, Title = "Photos",TargetType=typeof(Profile.Photos) },
+                    new MasterNavPageMenuItem { Id = 1, Title = "Profile",TargetType=typeof(Profile.ProfilePage) },
+                   // new MasterNavPageMenuItem { Id = 2, Title = "Photos",TargetType=typeof(Profile.Photos) },
                     //new MasterNavPageMenuItem { Id = 3, Title = "Page 4" },
                     //new MasterNavPageMenuItem { Id = 4, Title = "Page 5" },
                 });

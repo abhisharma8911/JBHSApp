@@ -17,6 +17,7 @@ namespace WedLock.ViewModels
         }
         public void LoginCommand_clicked()
         {
+           
             _navigationService.NavigateTo(ViewModelLocator.MasterNavPage);
         }
     }
