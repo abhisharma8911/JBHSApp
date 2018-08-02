@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WedLock.Pages.Profile.RequestsPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="10,20,10,20">
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="20,0,20,0">
+                        <Image Source="profileabhi.jpg" WidthRequest="40" HeightRequest="40"></Image>
+                        <Label WidthRequest="150">Abhimanyu Sharma</Label>
+                        <StackLayout>
+                            <Label>Approve Request</Label>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label>Reject Request</Label>
+                        </StackLayout>
+                    </StackLayout>
+                    <BoxView HeightRequest="0.3" Color="#7D4F69"  BackgroundColor="White"/>
+                </StackLayout>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="20,0,20,0">
+                        <Image Source="profileabhi.jpg" WidthRequest="40" HeightRequest="40"></Image>
+                        <Label WidthRequest="150">Abhimanyu Sharma</Label>
+                        <StackLayout>
+                            <Label>Approve Request</Label>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label>Reject Request</Label>
+                        </StackLayout>
+                    </StackLayout>
+                    <BoxView HeightRequest="0.3" Color="#7D4F69"  BackgroundColor="White"/>
+                </StackLayout>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="20,0,20,0">
+                        <Image Source="profileabhi.jpg" WidthRequest="40" HeightRequest="40"></Image>
+                        <Label WidthRequest="150">Abhimanyu Sharma</Label>
+                        <StackLayout>
+                            <Label>Approve Request</Label>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label>Reject Request</Label>
+                        </StackLayout>
+                    </StackLayout>
+                    <BoxView HeightRequest="0.3" Color="#7D4F69"  BackgroundColor="White"/>
+                </StackLayout>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="20,0,20,0">
+                        <Image Source="profileabhi.jpg" WidthRequest="40" HeightRequest="40"></Image>
+                        <Label WidthRequest="150">Abhimanyu Sharma</Label>
+                        <StackLayout>
+                            <Label>Approve Request</Label>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label>Reject Request</Label>
+                        </StackLayout>
+                    </StackLayout>
+                    <BoxView HeightRequest="0.3" Color="#7D4F69"  BackgroundColor="White"/>
+                </StackLayout>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="20,0,20,0">
+                        <Image Source="profileabhi.jpg" WidthRequest="40" HeightRequest="40"></Image>
+                        <Label WidthRequest="150">Abhimanyu Sharma</Label>
+                        <StackLayout>
+                            <Label>Approve Request</Label>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label>Reject Request</Label>
+                        </StackLayout>
+                    </StackLayout>
+                    <BoxView HeightRequest="0.3" Color="#7D4F69"  BackgroundColor="White"/>
+                </StackLayout>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="20,0,20,0">
+                        <Image Source="profileabhi.jpg" WidthRequest="40" HeightRequest="40"></Image>
+                        <Label WidthRequest="150">Abhimanyu Sharma</Label>
+                        <StackLayout>
+                            <Label>Approve Request</Label>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label>Reject Request</Label>
+                        </StackLayout>
+                    </StackLayout>
+                    <BoxView HeightRequest="0.3" Color="#7D4F69"  BackgroundColor="White"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

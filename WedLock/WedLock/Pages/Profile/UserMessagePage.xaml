@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:customControls="clr-namespace:WedLock.CustomControls;assembly=WedLock"
+             x:Class="WedLock.Pages.Profile.UserMessagePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <StackLayout Orientation="Vertical">
+                    <Label HorizontalOptions="EndAndExpand" WidthRequest="150" Margin="0,5,10,5">hi</Label>
+                    <Label HorizontalOptions="StartAndExpand" WidthRequest="150" Margin="10,5,0,5">hi! How are you?</Label>
+                    <Label HorizontalOptions="EndAndExpand" WidthRequest="150" Margin="0,5,10,5">I am good you say!</Label>
+                    <Label HorizontalOptions="StartAndExpand" WidthRequest="150" Margin="10,5,0,5">I am also good</Label>
+                    <Label HorizontalOptions="EndAndExpand" WidthRequest="150" Margin="0,5,10,5">I want to ask you something.</Label>
+
+                    <Label HorizontalOptions="StartAndExpand" WidthRequest="150" Margin="10,5,0,5">What?</Label>
+                    <Label HorizontalOptions="EndAndExpand" WidthRequest="150" Margin="0,5,10,5">asdasdasd asdasda asdasd fdfvsdfadf asdasd asdasd asdad asdasd asdasd asdasd</Label>
+                    <Label HorizontalOptions="StartAndExpand" WidthRequest="150" Margin="10,5,0,5">I am also good</Label>
+                    <Label HorizontalOptions="EndAndExpand" WidthRequest="150" Margin="0,5,10,5">I want to ask you something.</Label>
+
+
+                    <Label HorizontalOptions="StartAndExpand" WidthRequest="150" Margin="10,5,0,5">What?</Label>
+                    <Label HorizontalOptions="EndAndExpand" WidthRequest="150" Margin="0,5,10,5">asdasdasd asdasda asdasd fdfvsdfadf asdasd asdasd asdad asdasd asdasd asdasd</Label>
+                    <Label HorizontalOptions="StartAndExpand" WidthRequest="150" Margin="10,5,0,5">I am also good</Label>
+                    <Label HorizontalOptions="EndAndExpand" WidthRequest="150" Margin="0,5,10,5">I want to ask you something.</Label>
+
+
+                    <Label HorizontalOptions="StartAndExpand" WidthRequest="150" Margin="10,5,0,5">What?</Label>
+                    <Label HorizontalOptions="EndAndExpand" WidthRequest="150" Margin="0,5,10,5">asdasdasd asdasda asdasd fdfvsdfadf asdasd asdasd asdad asdasd asdasd asdasd</Label>
+                    <Label HorizontalOptions="StartAndExpand" WidthRequest="150" Margin="10,5,0,5">I am also good</Label>
+                    <Label HorizontalOptions="EndAndExpand" WidthRequest="150" Margin="0,5,10,5">I want to ask you something.</Label>
+
+                </StackLayout>
+            </ScrollView>
+            <StackLayout Orientation="Horizontal" BackgroundColor="#7D4F69">
+                <customControls:CustomEntry TextColor="White" PlaceholderColor="White" WidthRequest="325" Placeholder="Type new message....." >
+
+                </customControls:CustomEntry>
+                <Image Source="send.png" WidthRequest="25" HeightRequest="25" HorizontalOptions="End"></Image>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

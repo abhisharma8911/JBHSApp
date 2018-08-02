@@ -54,7 +54,8 @@ namespace WedLock
 
             var firstPage = GetMainPage();
             nav.Initialize(firstPage);
-            MainPage = firstPage;
+            //MainPage = firstPage;
+            MainPage = new Pages.Profile.UserMessagePage();
         }
 
         public static NavigationPage GetMainPage()
