@@ -79,6 +79,5 @@
 
   <ItemGroup>
     <Folder Include="NavigationService\" />
-    <Folder Include="ViewModels\Profile\" />
   </ItemGroup>
 </Project>
