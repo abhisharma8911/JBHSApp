@@ -15,6 +15,7 @@ namespace WedLock.Pages.Profile
 		public RequestsPage ()
 		{
 			InitializeComponent ();
-		}
+            BindingContext = App.Locator.RequestsPageViewModel;
+        }
 	}
 }

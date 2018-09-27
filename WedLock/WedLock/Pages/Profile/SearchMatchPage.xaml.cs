@@ -15,6 +15,7 @@ namespace WedLock.Pages.Profile
 		public SearchPage ()
 		{
 			InitializeComponent ();
-		}
+            BindingContext = App.Locator.SearchPageViewModel;
+        }
 	}
 }

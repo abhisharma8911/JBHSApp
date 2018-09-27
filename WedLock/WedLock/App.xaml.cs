@@ -26,36 +26,14 @@ namespace WedLock
             InitializeComponent();
 
             var nav = new NavigationService();
-
-            #region Account
-            nav.Configure(ViewModelLocator.HomePage, typeof(HomePage));
-            nav.Configure(ViewModelLocator.LoginPage, typeof(LoginPage));
-            nav.Configure(ViewModelLocator.RegisterPage, typeof(RegisterPage));
-            nav.Configure(ViewModelLocator.ForgotPasswordPage, typeof(ForgotPasswordPage));
-            #endregion
-
-            #region Shared
-            nav.Configure(ViewModelLocator.MasterNavPage, typeof(MasterNavPage));
-            #endregion
-
-            #region Profile
-            nav.Configure(ViewModelLocator.ProfilePage, typeof(ProfilePage));
-            nav.Configure(ViewModelLocator.PhotosPage, typeof(LoginPage));
-            nav.Configure(ViewModelLocator.SearchMatchPage, typeof(RegisterPage));
-            nav.Configure(ViewModelLocator.AccountDetailsPage, typeof(ForgotPasswordPage));
-            nav.Configure(ViewModelLocator.MessagesPage, typeof(HomePage));
-            nav.Configure(ViewModelLocator.ContactsPage, typeof(LoginPage));
-            nav.Configure(ViewModelLocator.ReferredPage, typeof(RegisterPage));
-            nav.Configure(ViewModelLocator.RequestsPage, typeof(ForgotPasswordPage));
-            #endregion
-
-            if (!SimpleIoc.Default.IsRegistered<INavigationService>())
-                SimpleIoc.Default.Register<INavigationService>(() => nav);
+            configurenavpages(nav);
+            if (!SimpleIoc.Default.IsRegistered<NavigationService>())
+                SimpleIoc.Default.Register<NavigationService>(() => nav);
 
             var firstPage = GetMainPage();
             nav.Initialize(firstPage);
-            //MainPage = firstPage;
-            MainPage = new Pages.Profile.UserMessagePage();
+            MainPage = firstPage;
+            //MainPage = new Pages.Profile.UserMessagePage();
         }
 
         public static NavigationPage GetMainPage()
@@ -77,5 +55,33 @@ namespace WedLock
         {
             // Handle when your app resumes
         }
+
+        static void configurenavpages(NavigationService nav)
+        {
+            #region Account
+            nav.Configure(ViewModelLocator.HomePage, typeof(HomePage));
+            nav.Configure(ViewModelLocator.LoginPage, typeof(LoginPage));
+            nav.Configure(ViewModelLocator.RegisterPage, typeof(RegisterPage));
+            nav.Configure(ViewModelLocator.ForgotPasswordPage, typeof(ForgotPasswordPage));
+            #endregion
+
+            #region Shared
+            nav.Configure(ViewModelLocator.MasterNavPage, typeof(MasterNavPage));
+            #endregion
+
+            #region Profile
+            nav.Configure(ViewModelLocator.ProfilePage, typeof(ProfilePage));
+            nav.Configure(ViewModelLocator.PhotosPage, typeof(PhotosPage));
+            nav.Configure(ViewModelLocator.SearchMatchPage, typeof(SearchPage));
+            nav.Configure(ViewModelLocator.AccountDetailsPage, typeof(AccountDetailsPage));
+            nav.Configure(ViewModelLocator.MessagesPage, typeof(MessagesPage));
+            nav.Configure(ViewModelLocator.ContactsPage, typeof(ContactsPage));
+            nav.Configure(ViewModelLocator.ReferredPage, typeof(ReferredPage));
+            nav.Configure(ViewModelLocator.RequestsPage, typeof(RequestsPage));
+            nav.Configure(ViewModelLocator.Dashboard, typeof(Dashboard));
+            nav.Configure(ViewModelLocator.UserMessagePage, typeof(UserMessagePage));
+            #endregion
+        }
+
     }
 }

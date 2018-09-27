@@ -15,6 +15,7 @@ namespace WedLock.Pages.Profile
 		public ReferredPage ()
 		{
 			InitializeComponent ();
-		}
+            BindingContext = App.Locator.ReferredPageViewModel;
+        }
 	}
 }

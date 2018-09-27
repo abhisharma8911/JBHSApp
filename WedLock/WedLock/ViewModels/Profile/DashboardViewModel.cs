@@ -6,9 +6,9 @@ using System.Text;
 
 namespace WedLock.ViewModels
 {
-    public class HomeViewModel:BaseViewModel
+    public class DashboardViewModel : BaseViewModel
     {
-        public HomeViewModel(INavigationService navService)
+        public DashboardViewModel(NavigationService navService)
         {
             _navigationService = navService;
         }

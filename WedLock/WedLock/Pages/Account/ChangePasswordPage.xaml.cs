@@ -12,7 +12,7 @@ namespace WedLock.Pages.Account
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ChangePasswordPage : ContentPage
 	{
-		public ChangePasswordPage ()
+       		public ChangePasswordPage ()
 		{
 			InitializeComponent ();
 		}

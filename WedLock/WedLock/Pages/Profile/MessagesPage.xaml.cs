@@ -15,6 +15,7 @@ namespace WedLock.Pages.Profile
 		public MessagesPage ()
 		{
 			InitializeComponent ();
-		}
+            BindingContext = App.Locator.MessagesPageViewModel;
+        }
 	}
 }

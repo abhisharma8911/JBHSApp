@@ -10,13 +10,12 @@ using Xamarin.Forms.Xaml;
 namespace WedLock.Pages.Profile
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Home : ContentPage
+    public partial class Dashboard : ContentPage
     {
-        private HomeViewModel viewModel = App.Locator.HomeViewModel;
-        public Home()
+        public Dashboard()
         {
             InitializeComponent();
-            BindingContext = viewModel;
+            BindingContext = App.Locator.DashboardViewModel;
         }
     }
 }

@@ -7,6 +7,7 @@
   <ItemGroup>
     <PackageReference Include="CommonServiceLocator" Version="2.0.3" />
     <PackageReference Include="MvvmLightLibs" Version="5.4.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
     <PackageReference Include="XFControls" Version="1.0.0.6" />
   </ItemGroup>
@@ -21,8 +22,11 @@
     <Compile Update="Pages\Account\RegisterPage.xaml.cs">
       <DependentUpon>RegisterPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Pages\Profile\Home.xaml.cs">
-      <DependentUpon>Home.xaml</DependentUpon>
+    <Compile Update="Pages\Profile\Dashboard.xaml.cs">
+      <DependentUpon>Dashboard.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\Profile\SearchMatchPage.xaml.cs">
+      <DependentUpon>SearchMatchPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Pages\Shared\MasterNavPageMenuItem.cs">
       <SubType>Code</SubType>
@@ -45,13 +49,19 @@
     <EmbeddedResource Update="Pages\Account\RegisterPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Pages\Profile\AccountDetailsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Pages\Profile\ContactsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Pages\Profile\Home.xaml">
+    <EmbeddedResource Update="Pages\Profile\Dashboard.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\Profile\MessagesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\Profile\PhotosPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\Profile\ProfilePage.xaml">
@@ -63,7 +73,7 @@
     <EmbeddedResource Update="Pages\Profile\RequestsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Pages\Profile\SearchPage.xaml">
+    <EmbeddedResource Update="Pages\Profile\SearchMatchPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\Profile\UserMessagePage.xaml">
@@ -79,5 +89,10 @@
 
   <ItemGroup>
     <Folder Include="NavigationService\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DataAccess\DataAccess.csproj" />
+    <ProjectReference Include="..\..\DataObjects\DataObjects.csproj" />
   </ItemGroup>
 </Project>

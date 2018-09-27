@@ -27,7 +27,7 @@
             <StackLayout Margin="50,5">
                 <StackLayout Orientation="Horizontal">
                     <Image HorizontalOptions="Start" Source="avatar2536.png" Aspect="AspectFit" Margin="15,0"/>
-                    <customControls:CustomEntry HorizontalOptions="FillAndExpand" Margin="15,0" Placeholder="Name" BackgroundColor="Transparent"
+                    <customControls:CustomEntry HorizontalOptions="FillAndExpand" Margin="15,0" Text="{Binding Name, Mode=TwoWay}" Placeholder="Name" BackgroundColor="Transparent"
                                             PlaceholderColor="#DFD7DC"  TextColor="White" FontSize="20" />
                 </StackLayout>
                 <BoxView HeightRequest="1" BackgroundColor="White"/>
@@ -35,7 +35,7 @@
             <StackLayout Margin="50,5">
                 <StackLayout Orientation="Horizontal">
                     <Image HorizontalOptions="Start" Source="phonecall1254.png" Aspect="AspectFit" Margin="15,0"/>
-                    <customControls:CustomEntry HorizontalOptions="FillAndExpand" Margin="15,0" Placeholder="Mobile Number" BackgroundColor="Transparent"
+                    <customControls:CustomEntry HorizontalOptions="FillAndExpand" Margin="15,0" Keyboard="Numeric" Text="{Binding MobileNumber, Mode=TwoWay}" Placeholder="Mobile Number" BackgroundColor="Transparent"
                                                 PlaceholderColor="#DFD7DC"  TextColor="White" FontSize="20" />
                 </StackLayout>
                 <BoxView HeightRequest="1" BackgroundColor="White"/>
@@ -43,7 +43,7 @@
             <StackLayout Margin="50,5">
                 <StackLayout Orientation="Horizontal">
                     <Image HorizontalOptions="Start" Source="key2456.png" Aspect="AspectFit" Margin="15,0"/>
-                    <customControls:CustomEntry Margin="15,0" IsPassword="True" Placeholder="Password" BackgroundColor="Transparent"
+                    <customControls:CustomEntry Margin="15,0" IsPassword="True" Text="{Binding Password}" Placeholder="Password" BackgroundColor="Transparent"
                                                 PlaceholderColor="#DFD7DC"  TextColor="White" FontSize="20" />
                 </StackLayout>
                 <BoxView HeightRequest="1" BackgroundColor="White"/>
@@ -51,23 +51,37 @@
             <StackLayout Margin="50,5">
                 <xfControls:RadioGroup Orientation="Horizontal" OnImg="radiobtnon.png" OffImg="radiobtnoff.png" >
                     <StackLayout Orientation="Horizontal">
-                        <xfControls:Radio ShowRadio="True" TextAlignment="Center" HorizontalOptions="Start"/>
-                        <Label Text="Male" TextColor="White" FontSize="20"/>
-                        <xfControls:Radio ShowRadio="True" Margin="10,0,0,0" TextAlignment="Center" HorizontalOptions="End"/>
-                        <Label Text="Female" TextColor="White" FontSize="20"/>
+                        <StackLayout Orientation="Horizontal">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding SexMaleCommand}"></TapGestureRecognizer>
+                            </StackLayout.GestureRecognizers>
+                            <xfControls:Radio ShowRadio="True" IsSelected="{Binding SexMale}"  IsEnabled="True" IsVisible="True" TextAlignment="Center" HorizontalOptions="Start"/>
+                            <Label Text="Male" TextColor="White" FontSize="20"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding SexFemaleCommand}"></TapGestureRecognizer>
+                            </StackLayout.GestureRecognizers>
+                            <xfControls:Radio ShowRadio="True" IsSelected="{Binding SexFemale}" Margin="10,0,0,0" IsEnabled="True" IsVisible="True" TextAlignment="Center" HorizontalOptions="End"/>
+                            <Label Text="Female" TextColor="White" FontSize="20"/>
+                        </StackLayout>
                     </StackLayout>
                 </xfControls:RadioGroup>
             </StackLayout>
             <StackLayout Margin="50,5">
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Age" TextColor="White" FontSize="20" Margin="0,8,0,0"/>
-                    <DatePicker BackgroundColor="Transparent" TextColor="White" />
+                    <DatePicker BackgroundColor="Transparent" TextColor="White" Date="{Binding DateOfBirth}" />
                 </StackLayout>
                 <BoxView HeightRequest="1" BackgroundColor="White"/>
             </StackLayout>
             <xfControls:Border CornerRadius="60" Margin="50,10,50,10">
                 <StackLayout BackgroundColor="#982268" Orientation="Horizontal">
-                    <Image HorizontalOptions="Start" Source="mail.png" Aspect="AspectFit"
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding RegisterCommand}">
+                        </TapGestureRecognizer>
+                    </StackLayout.GestureRecognizers>
+                    <Image HorizontalOptions="Start" Source="pencil.png" Aspect="AspectFit"
                                HeightRequest="20" Margin="30,10,0,10"/>
                     <Label Text="REGISTER NOW" TextColor="White" HorizontalTextAlignment="Center"
                                VerticalTextAlignment="Center" Margin="15,0,0,0" HeightRequest="32" FontSize="16"

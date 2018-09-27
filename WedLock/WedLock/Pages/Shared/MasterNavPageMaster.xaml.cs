@@ -33,7 +33,7 @@ namespace WedLock.Pages.Shared
             {
                 MenuItems = new ObservableCollection<MasterNavPageMenuItem>(new[]
                 {
-                    new MasterNavPageMenuItem { Id = 0, Title = "Home", TargetType=typeof(Profile.Home) },
+                    new MasterNavPageMenuItem { Id = 0, Title = "Home", TargetType=typeof(Profile.Dashboard) },
                     new MasterNavPageMenuItem { Id = 1, Title = "Profile",TargetType=typeof(Profile.ProfilePage) },
                    // new MasterNavPageMenuItem { Id = 2, Title = "Photos",TargetType=typeof(Profile.Photos) },
                     //new MasterNavPageMenuItem { Id = 3, Title = "Page 4" },

@@ -12,7 +12,7 @@ namespace WedLock
     {
         private readonly Dictionary<string, Type> _pagesByKey = new Dictionary<string, Type>();
         private NavigationPage _navigation;
-        
+
         public string CurrentPageKey
         {
             get
@@ -92,8 +92,6 @@ namespace WedLock
                         Page page = constructor.Invoke(parameters) as Page;
                         _navigation.PushAsync(page);
 
-
-
                     }
                     catch (Exception e)
                     {
@@ -128,7 +126,7 @@ namespace WedLock
 
         public void Initialize(NavigationPage navigation)
         {
-            navigation.BarBackgroundColor = Color.FromHex("#2C8F65");
+            navigation.BarBackgroundColor = Color.FromHex("#7D4F69");
             navigation.BarTextColor = Color.White;
             _navigation = navigation;
         }

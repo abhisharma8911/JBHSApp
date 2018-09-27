@@ -4,14 +4,13 @@ using Xamarin.Forms.Xaml;
 
 namespace WedLock.Pages.Account
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class RegisterPage : ContentPage
-	{
-        private RegisterViewModel viewmodel = App.Locator.RegisterViewModel;
-		public RegisterPage ()
-		{
-			InitializeComponent ();
-            BindingContext = viewmodel;
-		}
-	}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class RegisterPage : ContentPage
+    {
+        public RegisterPage()
+        {
+            InitializeComponent();
+            BindingContext = App.Locator.RegisterViewModel;
+        }
+    }
 }

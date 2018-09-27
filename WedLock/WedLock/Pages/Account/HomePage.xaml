@@ -8,7 +8,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Image Source="logo.png" Aspect="AspectFit" Margin="0,130,0,0" HeightRequest="50"/>
-            <Label Text="Jivan Bhar&#10;Humsafar" HorizontalOptions="FillAndExpand" Margin="5"
+            <Label Text="Wish&#10;a Date" HorizontalOptions="FillAndExpand" Margin="5"
                    TextColor="White" FontAttributes="Bold" FontSize="28"
                    HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
                 <Label.FontFamily>
@@ -43,7 +43,7 @@
                     </StackLayout>
                 </StackLayout>
             </xfControls:Border>
-            <Label Text="Jivan Bhar Humsafar is a leading Matrimonial cum Dating site. Join now to find a partner for spending some leasure time or to find your life partner. You can create profile for yourself or your relative."
+            <Label Text="Wish a Date and meet your date in days. Join now to find a partner for spending some leasure time or to find your love life partner. You can create your profile in just few touches."
                    HorizontalOptions="Center" Margin="20,10" TextColor="White" FontSize="18"
                    HorizontalTextAlignment="Center" VerticalTextAlignment="Center" >
               </Label>

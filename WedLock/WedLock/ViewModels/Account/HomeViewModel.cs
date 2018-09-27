@@ -3,9 +3,9 @@ using GalaSoft.MvvmLight.Views;
 
 namespace WedLock.ViewModels
 {
-    public class HomePageViewModel : BaseViewModel
+    public class HomeViewModel : BaseViewModel
     {
-        public HomePageViewModel(INavigationService navService)
+        public HomeViewModel(NavigationService navService)
         {
             _navigationService = navService;
         }

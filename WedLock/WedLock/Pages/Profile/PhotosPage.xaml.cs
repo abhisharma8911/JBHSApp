@@ -10,12 +10,12 @@ using Xamarin.Forms.Xaml;
 namespace WedLock.Pages.Profile
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ProfilePage : ContentPage
+	public partial class PhotosPage : ContentPage
 	{
-		public ProfilePage ()
+		public PhotosPage ()
 		{
 			InitializeComponent ();
-            BindingContext = App.Locator.ProfilePageViewModel;
-        }
+            BindingContext = App.Locator.PhotosPageViewModel;
+		}
 	}
 }
